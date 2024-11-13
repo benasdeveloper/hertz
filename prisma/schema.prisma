@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Vehicle {
+  id                String        @id @default(cuid())
+  make              String
+  model             String
+  year              Int
+  doors             Int
+  max_passengers    Int
+  classification    String
+  thumbnail_url     String
+  hourly_rate_cents Int
+  reservations      Reservation[]
+}
+
+model Reservation {
+  id                String   @id @default(cuid())
+  vehicle_id        String
+  start_time        DateTime
+  end_time          DateTime
+  total_price_cents Int
+  created_at        DateTime @default(now())
+  vehicle           Vehicle  @relation(fields: [vehicle_id], references: [id], onDelete: Cascade)
+}
