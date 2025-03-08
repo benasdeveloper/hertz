@@ -2,7 +2,11 @@
 
 # Welcome!
 
-Welcome to Hertz Hental Car, a full-stack study project designed to simulate a modern rental car reservation system. This project showcases my skills in both front-end and back-end development, incorporating real-world features such as user authentication, booking management, and vehicle availability tracking.
+Welcome to Hertz Car Rental, a full-stack study project designed to simulate a modern rental car reservation system. This project showcases my skills in both front-end and back-end development, incorporating real-world features such as user authentication, booking management, and vehicle availability tracking.
+
+![Demo](hertz-demo.gif)
+
+### [🎥 Veja a Demo do Hertz Car Rental](https://youtu.be/KMWcl_pEPO0)
 
 ## Getting started
 
